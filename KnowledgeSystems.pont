@@ -1,4 +1,4 @@
-; Sat Dec 09 11:29:46 EET 2023
+; Sat Dec 09 12:25:09 EET 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -7,10 +7,54 @@
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
 	(role abstract)
+	(multislot spectroscopy_
+		(type SYMBOL)
+;+		(allowed-parents Carbon Sulphur Metal Sodium)
+		(create-accessor read-write))
 	(single-slot pH
 		(type FLOAT)
 		(range 0.0 14.0)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot causesAsphyxiation
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot chemicalSymbolism
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot englishName
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot radioactivity
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot color
+		(type SYMBOL)
+;+		(allowed-parents NoneColor Red White)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot smell
+		(type SYMBOL)
+;+		(allowed-parents NoneSmell Vinegar Choking)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot burnSkin
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot KnowledgeSystems_Class12
+		(type SYMBOL)
+;+		(allowed-parents)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot specificGravity
 		(type FLOAT)
@@ -26,28 +70,33 @@
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot chemicalSymbolism
+	(single-slot KnowledgeSystems_Class31
 		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot englishName
-		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot color
-		(type SYMBOL)
-;+		(allowed-parents None Red White)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot KnowledgeSystems_Class12
+	(single-slot spectroscopy
 		(type SYMBOL)
-;+		(allowed-parents)
+;+		(allowed-parents Carbon Sulphur Metal Sodium)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot KnowledgeSystems_Class32
+		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass Chemical
 	(is-a USER)
 	(role abstract)
+	(single-slot radioactivity
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot spectroscopy_
+		(type SYMBOL)
+;+		(allowed-parents Carbon Sulphur Metal Sodium)
+		(create-accessor read-write))
 	(single-slot pH
 		(type FLOAT)
 		(range 0.0 14.0)
@@ -56,6 +105,30 @@
 	(single-slot specificGravity
 		(type FLOAT)
 		(range 0.9 1.1)
+		(default 1.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot color
+		(type SYMBOL)
+;+		(allowed-parents NoneColor Red White)
+		(default NoneColor)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot solubility
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot causesAsphyxiation
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot smell
+		(type SYMBOL)
+;+		(allowed-parents NoneSmell Vinegar Choking)
+		(default NoneSmell)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot greekName
@@ -66,23 +139,14 @@
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot color
+	(single-slot burnSkin
 		(type SYMBOL)
-;+		(allowed-parents None Red White)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot KnowledgeSystems_Class12
-		(type SYMBOL)
-;+		(allowed-parents)
-;+		(cardinality 0 1)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot englishName
 		(type STRING)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot solubility
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
@@ -102,6 +166,13 @@
 		(type FLOAT)
 		(range 0.0 2.999999)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot burnSkin
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(value TRUE)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass WeakAcid
@@ -110,6 +181,13 @@
 	(single-slot pH
 		(type FLOAT)
 		(range 3.0 5.999999)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot burnSkin
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(value FALSE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
@@ -129,6 +207,13 @@
 		(type FLOAT)
 		(range 11.0 14.0)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot burnSkin
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(value FALSE)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass WeakBase
@@ -137,6 +222,56 @@
 	(single-slot pH
 		(type FLOAT)
 		(range 8.0 10.999999)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot burnSkin
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(value FALSE)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Oil
+	(is-a Chemical)
+	(role concrete)
+	(single-slot pH
+		(type FLOAT)
+		(range 6.0 7.999999)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot specificGravity
+		(type FLOAT)
+		(range 0.9 1.1)
+		(default 1.0)
+;+		(value 1.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot smell
+		(type SYMBOL)
+;+		(allowed-parents NoneSmell Vinegar Choking)
+		(default NoneSmell)
+;+		(value NoneSmell)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot color
+		(type SYMBOL)
+;+		(allowed-parents NoneColor Red White)
+		(default NoneColor)
+;+		(value NoneColor)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot burnSkin
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(value FALSE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot solubility
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(value FALSE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
@@ -152,6 +287,42 @@
 	(is-a Color)
 	(role abstract))
 
-(defclass None
+(defclass NoneColor
 	(is-a Color)
+	(role abstract))
+
+(defclass Spectroscopy
+	(is-a USER)
+	(role abstract))
+
+(defclass Carbon
+	(is-a Spectroscopy)
+	(role abstract))
+
+(defclass Sulphur
+	(is-a Spectroscopy)
+	(role abstract))
+
+(defclass Metal
+	(is-a Spectroscopy)
+	(role abstract))
+
+(defclass Sodium
+	(is-a Spectroscopy)
+	(role abstract))
+
+(defclass Smell
+	(is-a USER)
+	(role abstract))
+
+(defclass Choking
+	(is-a Smell)
+	(role abstract))
+
+(defclass Vinegar
+	(is-a Smell)
+	(role abstract))
+
+(defclass NoneSmell
+	(is-a Smell)
 	(role abstract))
