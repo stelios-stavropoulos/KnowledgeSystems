@@ -1,4 +1,4 @@
-; Sat Dec 09 12:25:09 EET 2023
+; Sat Dec 09 16:30:28 EET 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -20,9 +20,15 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[KnowledgeSystems_ProjectKB_Class78]
-		[KnowledgeSystems_ProjectKB_Class79]
-		[KnowledgeSystems_ProjectKB_Class80]))
+		[KnowledgeSystems_ProjectKB_Class10290]
+		[KnowledgeSystems_ProjectKB_Class10291]
+		[KnowledgeSystems_ProjectKB_Class10292]
+		[KnowledgeSystems_ProjectKB_Class10293]
+		[KnowledgeSystems_ProjectKB_Class10294]
+		[KnowledgeSystems_ProjectKB_Class10295]
+		[KnowledgeSystems_ProjectKB_Class10296]
+		[KnowledgeSystems_ProjectKB_Class10297]
+		[KnowledgeSystems_ProjectKB_Class10298]))
 
 ([CLSES_TAB] of  Widget
 
@@ -62,9 +68,6 @@
 ([INSTANCES_TAB] of  Widget
 
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
-
-([KB_242250_Class0] of  Map
-)
 
 ([KB_495176_Class0] of  String
 
@@ -166,11 +169,14 @@
 	(name "classes_file_name")
 	(string_value "KnowledgeSystems.pont"))
 
+([KB_879500_Class0] of  Map
+)
+
 ([KnowledgeSystems_ProjectKB_Class1] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class2])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
 
 ([KnowledgeSystems_ProjectKB_Class10] of  Property_List
 )
@@ -179,11 +185,237 @@
 
 	(name "SearchTab_Query"))
 
+([KnowledgeSystems_ProjectKB_Class10103] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "Wells")
+	(property_list [KnowledgeSystems_ProjectKB_Class10104])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KnowledgeSystems_ProjectKB_Class10104] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class10132] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "corrosive")
+	(property_list [KnowledgeSystems_ProjectKB_Class10133])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([KnowledgeSystems_ProjectKB_Class10133] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class10134] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "corrosive")
+	(property_list [KnowledgeSystems_ProjectKB_Class10135])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([KnowledgeSystems_ProjectKB_Class10135] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class10227] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "toxicity")
+	(property_list [KnowledgeSystems_ProjectKB_Class10228])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 300))
+
+([KnowledgeSystems_ProjectKB_Class10228] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class10229] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "toxicity")
+	(property_list [KnowledgeSystems_ProjectKB_Class10230])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 300))
+
+([KnowledgeSystems_ProjectKB_Class10230] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class10231] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "toxicity")
+	(property_list [KnowledgeSystems_ProjectKB_Class10232])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 300))
+
+([KnowledgeSystems_ProjectKB_Class10232] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class10233] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "toxicity")
+	(property_list [KnowledgeSystems_ProjectKB_Class10234])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 300))
+
+([KnowledgeSystems_ProjectKB_Class10234] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class10235] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "toxicity")
+	(property_list [KnowledgeSystems_ProjectKB_Class10236])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 300))
+
+([KnowledgeSystems_ProjectKB_Class10236] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class10254] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "KnowledgeSystems_Class42")
+	(property_list [KnowledgeSystems_ProjectKB_Class10255])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([KnowledgeSystems_ProjectKB_Class10255] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class10256] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "KnowledgeSystems_Class42")
+	(property_list [KnowledgeSystems_ProjectKB_Class10257])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([KnowledgeSystems_ProjectKB_Class10257] of  Property_List
+
+	(properties
+		[KnowledgeSystems_ProjectKB_Class10258]
+		[KnowledgeSystems_ProjectKB_Class10259]))
+
+([KnowledgeSystems_ProjectKB_Class10258] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([KnowledgeSystems_ProjectKB_Class10259] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([KnowledgeSystems_ProjectKB_Class10267] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "Chemicals")
+	(property_list [KnowledgeSystems_ProjectKB_Class10268])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsListWidget")
+	(width 200)
+	(x 0)
+	(y 120))
+
+([KnowledgeSystems_ProjectKB_Class10268] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class10269] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "Well_")
+	(property_list [KnowledgeSystems_ProjectKB_Class10270])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KnowledgeSystems_ProjectKB_Class10270] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class10290] of  String
+
+	(name "Acid")
+	(string_value "greekName"))
+
+([KnowledgeSystems_ProjectKB_Class10291] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([KnowledgeSystems_ProjectKB_Class10292] of  String
+
+	(name "Chemical")
+	(string_value "greekName"))
+
+([KnowledgeSystems_ProjectKB_Class10293] of  String
+
+	(name "StrongBase")
+	(string_value "greekName"))
+
+([KnowledgeSystems_ProjectKB_Class10294] of  String
+
+	(name "CheckPoint")
+	(string_value "name"))
+
+([KnowledgeSystems_ProjectKB_Class10295] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([KnowledgeSystems_ProjectKB_Class10296] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([KnowledgeSystems_ProjectKB_Class10297] of  String
+
+	(name "Well")
+	(string_value "name"))
+
+([KnowledgeSystems_ProjectKB_Class10298] of  String
+
+	(name "Store")
+	(string_value "name"))
+
 ([KnowledgeSystems_ProjectKB_Class11] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class12])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
+	(widget_class_name "ezpal.EZPalTab"))
 
 ([KnowledgeSystems_ProjectKB_Class12] of  Property_List
 )
@@ -201,7 +433,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class16])
-	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
 
 ([KnowledgeSystems_ProjectKB_Class16] of  Property_List
 )
@@ -210,7 +442,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class18])
-	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
 
 ([KnowledgeSystems_ProjectKB_Class18] of  Property_List
 )
@@ -219,7 +451,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class20])
-	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
 
 ([KnowledgeSystems_ProjectKB_Class2] of  Property_List
 )
@@ -231,7 +463,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class22])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
 
 ([KnowledgeSystems_ProjectKB_Class22] of  Property_List
 )
@@ -240,7 +472,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class24])
-	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
 
 ([KnowledgeSystems_ProjectKB_Class24] of  Property_List
 )
@@ -249,7 +481,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class26])
-	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
 
 ([KnowledgeSystems_ProjectKB_Class26] of  Property_List
 )
@@ -258,7 +490,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class28])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
 
 ([KnowledgeSystems_ProjectKB_Class28] of  Property_List
 )
@@ -267,13 +499,13 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class30])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
+	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
 
 ([KnowledgeSystems_ProjectKB_Class3] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class4])
-	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLMetadataTab"))
 
 ([KnowledgeSystems_ProjectKB_Class30] of  Property_List
 )
@@ -282,7 +514,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class32])
-	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.cls.OWLClassesTab"))
 
 ([KnowledgeSystems_ProjectKB_Class32] of  Property_List
 )
@@ -300,7 +532,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class36])
-	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
+	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
 
 ([KnowledgeSystems_ProjectKB_Class36] of  Property_List
 )
@@ -309,7 +541,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class38])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
 
 ([KnowledgeSystems_ProjectKB_Class38] of  Property_List
 )
@@ -318,7 +550,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class40])
-	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+	(widget_class_name "TGViztab.TGVizTab"))
 
 ([KnowledgeSystems_ProjectKB_Class4] of  Property_List
 )
@@ -330,7 +562,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class42])
-	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
 
 ([KnowledgeSystems_ProjectKB_Class42] of  Property_List
 )
@@ -339,7 +571,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class44])
-	(widget_class_name "TGViztab.TGVizTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
 
 ([KnowledgeSystems_ProjectKB_Class44] of  Property_List
 )
@@ -348,7 +580,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class46])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
 
 ([KnowledgeSystems_ProjectKB_Class46] of  Property_List
 )
@@ -357,7 +589,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class48])
-	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
 
 ([KnowledgeSystems_ProjectKB_Class48] of  Property_List
 )
@@ -366,13 +598,13 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class50])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
 
 ([KnowledgeSystems_ProjectKB_Class5] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class6])
-	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLPropertiesTab"))
 
 ([KnowledgeSystems_ProjectKB_Class50] of  Property_List
 )
@@ -381,7 +613,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class52])
-	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
+	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
 
 ([KnowledgeSystems_ProjectKB_Class52] of  Property_List
 )
@@ -390,7 +622,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class54])
-	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
 
 ([KnowledgeSystems_ProjectKB_Class54] of  Property_List
 )
@@ -399,7 +631,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class56])
-	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormsTab"))
 
 ([KnowledgeSystems_ProjectKB_Class56] of  Property_List
 )
@@ -408,7 +640,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class58])
-	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
+	(widget_class_name "script.ProtegeScriptTab"))
 
 ([KnowledgeSystems_ProjectKB_Class58] of  Property_List
 )
@@ -417,7 +649,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class60])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
 
 ([KnowledgeSystems_ProjectKB_Class6] of  Property_List
 )
@@ -429,7 +661,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class62])
-	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
 
 ([KnowledgeSystems_ProjectKB_Class62] of  Property_List
 )
@@ -438,7 +670,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class64])
-	(widget_class_name "script.ProtegeScriptTab"))
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
 
 ([KnowledgeSystems_ProjectKB_Class64] of  Property_List
 )
@@ -447,7 +679,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class66])
-	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
 
 ([KnowledgeSystems_ProjectKB_Class66] of  Property_List
 )
@@ -456,7 +688,7 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class68])
-	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
 
 ([KnowledgeSystems_ProjectKB_Class68] of  Property_List
 )
@@ -465,13 +697,13 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class70])
-	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
 
 ([KnowledgeSystems_ProjectKB_Class7] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class8])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
 
 ([KnowledgeSystems_ProjectKB_Class70] of  Property_List
 )
@@ -480,43 +712,19 @@
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class72])
-	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
 
 ([KnowledgeSystems_ProjectKB_Class72] of  Property_List
 )
 
-([KnowledgeSystems_ProjectKB_Class73] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KnowledgeSystems_ProjectKB_Class74])
-	(widget_class_name "ezpal.EZPalTab"))
-
-([KnowledgeSystems_ProjectKB_Class74] of  Property_List
-)
-
-([KnowledgeSystems_ProjectKB_Class78] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([KnowledgeSystems_ProjectKB_Class79] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
 ([KnowledgeSystems_ProjectKB_Class8] of  Property_List
 )
-
-([KnowledgeSystems_ProjectKB_Class80] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
 
 ([KnowledgeSystems_ProjectKB_Class9] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [KnowledgeSystems_ProjectKB_Class10])
-	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
 
 ([LAYOUT_PROPERTIES] of  Property_List
 
@@ -600,11 +808,11 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
-		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[STANDARD_CLASS_FORM_WIDGET]
-		[STANDARD_SLOT_FORM_WIDGET]
 		[STANDARD_FACET_FORM_WIDGET]
-		[PAL_FORM_WIDGET])
+		[PAL_FORM_WIDGET]
+		[STANDARD_CLASS_FORM_WIDGET]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[STANDARD_SLOT_FORM_WIDGET])
 	(default_cls_metaclass ":STANDARD-CLASS")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")

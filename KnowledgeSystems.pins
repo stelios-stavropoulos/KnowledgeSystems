@@ -1,4 +1,286 @@
-; Sat Dec 09 12:25:09 EET 2023
+; Sat Dec 09 16:30:28 EET 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
+
+([KnowledgeSystems_Class11] of  StrongAcid
+
+	(burnSkin TRUE)
+	(causesAsphyxiation TRUE)
+	(chemicalSymbolism "HCl")
+	(color NoneColor)
+	(corrosive TRUE)
+	(englishName "Hydrochloric acid")
+	(greekName "Υδροχλωρικό οξύ")
+	(nonSolubility FALSE)
+	(pH 1.1)
+	(radioactivity FALSE)
+	(smell NoneSmell)
+	(specificGravity 1.0))
+
+([KnowledgeSystems_Class13] of  WeakAcid
+
+	(burnSkin FALSE)
+	(causesAsphyxiation FALSE)
+	(chemicalSymbolism "CH3COOH")
+	(color NoneColor)
+	(englishName "Acetic acid")
+	(greekName "Οξικό οξύ")
+	(nonSolubility FALSE)
+	(pH 4.76)
+	(radioactivity FALSE)
+	(smell Vinegar)
+	(specificGravity 1.0))
+
+([KnowledgeSystems_Class14] of  WeakAcid
+
+	(burnSkin FALSE)
+	(causesAsphyxiation FALSE)
+	(chemicalSymbolism "H2CO3")
+	(color NoneColor)
+	(englishName "Carbonic acid")
+	(greekName "Ανθρακικό οξύ")
+	(nonSolubility FALSE)
+	(pH 4.68)
+	(radioactivity FALSE)
+	(smell NoneSmell)
+	(specificGravity 1.0)
+	(spectroscopy Carbon))
+
+([KnowledgeSystems_Class16] of  StrongBase
+
+	(burnSkin FALSE)
+	(causesAsphyxiation FALSE)
+	(chemicalSymbolism "NaOH")
+	(color White)
+	(corrosive TRUE)
+	(englishName "Sodium hydroxide")
+	(greekName "Υδροξείδιο του Νατρίου")
+	(nonSolubility FALSE)
+	(pH 13.0)
+	(radioactivity FALSE)
+	(smell NoneSmell)
+	(specificGravity 1.0))
+
+([KnowledgeSystems_Class19] of  WeakBase
+
+	(burnSkin FALSE)
+	(causesAsphyxiation FALSE)
+	(chemicalSymbolism "Al(OH)3")
+	(color White)
+	(corrosive FALSE)
+	(englishName "Aluminium hydroxide")
+	(greekName "Υδροξείδιο του Αργιλίου")
+	(nonSolubility FALSE)
+	(pH 8.5)
+	(radioactivity FALSE)
+	(smell NoneSmell)
+	(specificGravity 1.1)
+	(spectroscopy Metal))
+
+([KnowledgeSystems_Class20] of  WeakBase
+
+	(burnSkin FALSE)
+	(causesAsphyxiation FALSE)
+	(color Red)
+	(corrosive FALSE)
+	(englishName "Chromogen 23")
+	(greekName "Χρωμογόνο 23")
+	(radioactivity FALSE)
+	(smell NoneSmell)
+	(specificGravity 0.9))
+
+([KnowledgeSystems_Class21] of  WeakBase
+
+	(burnSkin FALSE)
+	(causesAsphyxiation FALSE)
+	(chemicalSymbolism "RbOH")
+	(color NoneColor)
+	(corrosive FALSE)
+	(englishName "Rubidium hydroxide")
+	(greekName "Υδροξείδιο του Ρουβιδίου")
+	(pH 10.5)
+	(radioactivity TRUE)
+	(smell NoneSmell)
+	(specificGravity 1.1)
+	(spectroscopy Metal))
+
+([KnowledgeSystems_Class23] of  Oil
+
+	(burnSkin FALSE)
+	(causesAsphyxiation FALSE)
+	(color NoneColor)
+	(corrosive FALSE)
+	(englishName "Petrol")
+	(greekName "Βενζίνη")
+	(radioactivity FALSE)
+	(smell NoneSmell)
+	(specificGravity 0.9)
+	(spectroscopy Carbon))
+
+([KnowledgeSystems_Class24] of  Oil
+
+	(burnSkin FALSE)
+	(causesAsphyxiation FALSE)
+	(color NoneColor)
+	(corrosive FALSE)
+	(englishName "Transformer oil")
+	(greekName "Πετρέλαιο")
+	(radioactivity FALSE)
+	(smell NoneSmell)
+	(specificGravity 1.0)
+	(spectroscopy Carbon)
+	(toxicity TRUE))
+
+([KnowledgeSystems_Class28] of  CheckPoint
+
+	(name "Σταθμός Ελέγχου"))
+
+([KnowledgeSystems_Class29] of  Well
+
+	(name "Φρεάτιο 1")
+	(Wells [KnowledgeSystems_Class37]))
+
+([KnowledgeSystems_Class30] of  Well
+
+	(name "Φρεάτιο 2")
+	(Wells [KnowledgeSystems_Class37]))
+
+([KnowledgeSystems_Class31] of  Well
+
+	(name "Φρεάτιο 3")
+	(Wells [KnowledgeSystems_Class37]))
+
+([KnowledgeSystems_Class32] of  Well
+
+	(name "Φρεάτιο 4")
+	(Wells [KnowledgeSystems_Class38]))
+
+([KnowledgeSystems_Class33] of  Well
+
+	(name "Φρεάτιο 5")
+	(Wells [KnowledgeSystems_Class38]))
+
+([KnowledgeSystems_Class34] of  Well
+
+	(name "Φρεάτιο 6")
+	(Wells [KnowledgeSystems_Class39]))
+
+([KnowledgeSystems_Class35] of  Well
+
+	(name "Φρεάτιο 7")
+	(Wells [KnowledgeSystems_Class39]))
+
+([KnowledgeSystems_Class36] of  Well
+
+	(name "Φρεάτιο 8")
+	(Wells [KnowledgeSystems_Class41]))
+
+([KnowledgeSystems_Class37] of  Well
+
+	(name "Φρεάτιο 9")
+	(Wells [KnowledgeSystems_Class40]))
+
+([KnowledgeSystems_Class38] of  Well
+
+	(name "Φρεάτιο 10")
+	(Wells [KnowledgeSystems_Class40]))
+
+([KnowledgeSystems_Class39] of  Well
+
+	(name "Φρεάτιο 11")
+	(Wells [KnowledgeSystems_Class41]))
+
+([KnowledgeSystems_Class40] of  Well
+
+	(name "Φρεάτιο 12")
+	(Wells [KnowledgeSystems_Class28]))
+
+([KnowledgeSystems_Class41] of  Well
+
+	(name "Φρεάτιο 13")
+	(Wells [KnowledgeSystems_Class28]))
+
+([KnowledgeSystems_Class43] of  Store
+
+	(Chemicals
+		[KnowledgeSystems_Class9]
+		[KnowledgeSystems_Class23])
+	(name "Αποθήκη 1")
+	(Wells [KnowledgeSystems_Class29]))
+
+([KnowledgeSystems_Class44] of  Store
+
+	(Chemicals
+		[KnowledgeSystems_Class11]
+		[KnowledgeSystems_Class13])
+	(name "Αποθήκη 2")
+	(Wells [KnowledgeSystems_Class30]))
+
+([KnowledgeSystems_Class45] of  Store
+
+	(Chemicals
+		[KnowledgeSystems_Class21]
+		[KnowledgeSystems_Class24])
+	(name "Αποθήκη 3")
+	(Wells [KnowledgeSystems_Class31]))
+
+([KnowledgeSystems_Class46] of  Store
+
+	(Chemicals
+		[KnowledgeSystems_Class14]
+		[KnowledgeSystems_Class13]
+		[KnowledgeSystems_Class23])
+	(name "Αποθήκη 4")
+	(Wells [KnowledgeSystems_Class32]))
+
+([KnowledgeSystems_Class47] of  Store
+
+	(Chemicals
+		[KnowledgeSystems_Class20]
+		[KnowledgeSystems_Class9]
+		[KnowledgeSystems_Class23])
+	(name "Αποθήκη 5")
+	(Wells [KnowledgeSystems_Class33]))
+
+([KnowledgeSystems_Class48] of  Store
+
+	(Chemicals
+		[KnowledgeSystems_Class19]
+		[KnowledgeSystems_Class24]
+		[KnowledgeSystems_Class14])
+	(name "Αποθήκη 6")
+	(Wells [KnowledgeSystems_Class34]))
+
+([KnowledgeSystems_Class49] of  Store
+
+	(Chemicals
+		[KnowledgeSystems_Class9]
+		[KnowledgeSystems_Class11])
+	(name "Αποθήκη 7")
+	(Wells [KnowledgeSystems_Class35]))
+
+([KnowledgeSystems_Class50] of  Store
+
+	(Chemicals
+		[KnowledgeSystems_Class14]
+		[KnowledgeSystems_Class13]
+		[KnowledgeSystems_Class16])
+	(name "Αποθήκη 8")
+	(Wells [KnowledgeSystems_Class36]))
+
+([KnowledgeSystems_Class9] of  StrongAcid
+
+	(burnSkin TRUE)
+	(causesAsphyxiation FALSE)
+	(chemicalSymbolism "H2SO4")
+	(color NoneColor)
+	(corrosive TRUE)
+	(englishName "Sulphuric acid")
+	(greekName "Θειικό οξύ")
+	(nonSolubility FALSE)
+	(pH 2.75)
+	(radioactivity FALSE)
+	(smell NoneSmell)
+	(specificGravity 1.0)
+	(spectroscopy Sulphur))
