@@ -1,4 +1,4 @@
-; Fri Dec 08 16:46:52 EET 2023
+; Sat Dec 09 11:29:46 EET 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -6,4 +6,152 @@
 
 (defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
 	(is-a USER)
+	(role abstract)
+	(single-slot pH
+		(type FLOAT)
+		(range 0.0 14.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot specificGravity
+		(type FLOAT)
+		(range 0.9 1.1)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot solubility
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot greekName
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot chemicalSymbolism
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot englishName
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot color
+		(type SYMBOL)
+;+		(allowed-parents None Red White)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot KnowledgeSystems_Class12
+		(type SYMBOL)
+;+		(allowed-parents)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Chemical
+	(is-a USER)
+	(role abstract)
+	(single-slot pH
+		(type FLOAT)
+		(range 0.0 14.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot specificGravity
+		(type FLOAT)
+		(range 0.9 1.1)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot greekName
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot chemicalSymbolism
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot color
+		(type SYMBOL)
+;+		(allowed-parents None Red White)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot KnowledgeSystems_Class12
+		(type SYMBOL)
+;+		(allowed-parents)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot englishName
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot solubility
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Acid
+	(is-a Chemical)
+	(role abstract)
+	(single-slot pH
+		(type FLOAT)
+		(range 0.0 5.999999)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass StrongAcid
+	(is-a Acid)
+	(role concrete)
+	(single-slot pH
+		(type FLOAT)
+		(range 0.0 2.999999)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass WeakAcid
+	(is-a Acid)
+	(role concrete)
+	(single-slot pH
+		(type FLOAT)
+		(range 3.0 5.999999)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Base
+	(is-a Chemical)
+	(role abstract)
+	(single-slot pH
+		(type FLOAT)
+		(range 8.0 14.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass StrongBase
+	(is-a Base)
+	(role concrete)
+	(single-slot pH
+		(type FLOAT)
+		(range 11.0 14.0)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass WeakBase
+	(is-a Base)
+	(role concrete)
+	(single-slot pH
+		(type FLOAT)
+		(range 8.0 10.999999)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Color
+	(is-a USER)
+	(role abstract))
+
+(defclass White
+	(is-a Color)
+	(role abstract))
+
+(defclass Red
+	(is-a Color)
+	(role abstract))
+
+(defclass None
+	(is-a Color)
 	(role abstract))

@@ -1,4 +1,4 @@
-; Fri Dec 08 16:46:52 EET 2023
+; Sat Dec 09 11:29:46 EET 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -20,9 +20,9 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[KnowledgeSystems_ProjectKB_Class75]
-		[KnowledgeSystems_ProjectKB_Class76]
-		[KnowledgeSystems_ProjectKB_Class77]))
+		[KnowledgeSystems_ProjectKB_Class78]
+		[KnowledgeSystems_ProjectKB_Class79]
+		[KnowledgeSystems_ProjectKB_Class80]))
 
 ([CLSES_TAB] of  Widget
 
@@ -63,7 +63,7 @@
 
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
-([KB_424453_Class0] of  Map
+([KB_290991_Class0] of  Map
 )
 
 ([KB_495176_Class0] of  String
@@ -494,23 +494,23 @@
 ([KnowledgeSystems_ProjectKB_Class74] of  Property_List
 )
 
-([KnowledgeSystems_ProjectKB_Class75] of  String
+([KnowledgeSystems_ProjectKB_Class78] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([KnowledgeSystems_ProjectKB_Class76] of  String
+([KnowledgeSystems_ProjectKB_Class79] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([KnowledgeSystems_ProjectKB_Class77] of  String
+([KnowledgeSystems_ProjectKB_Class8] of  Property_List
+)
+
+([KnowledgeSystems_ProjectKB_Class80] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
-
-([KnowledgeSystems_ProjectKB_Class8] of  Property_List
-)
 
 ([KnowledgeSystems_ProjectKB_Class9] of  Widget
 
